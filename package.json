@@ -1,8 +1,8 @@
 {
     "name": "@marshallku/react-postscribe",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "React component to render HTML with postscribe",
-    "main": "dist/index.cjs.js",
+    "main": "dist/index.esm.js",
     "module": "dist/index.esm.js",
     "types": "dist/index.d.ts",
     "type": "module",
