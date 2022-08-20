@@ -5,7 +5,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/marshallku/react-postscribe/badge.svg)](https://snyk.io/test/github/marshallku/@marshallku/react-postscribe)
 [![NPM Downloads](https://img.shields.io/npm/dm/@marshallku/react-postscribe.svg)](https://www.npmjs.com/package/@marshallku/react-postscribe)
 
-React component to render HTML with [`postscribe`](https://github.com/krux/postscribe).\
+React component to render HTML with [`postscribe`](https://github.com/krux/postscribe).
 
 ---
 
