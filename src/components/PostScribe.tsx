@@ -21,6 +21,10 @@ export default function PostScribe({
     releaseAsync,
 }: PostScribeProps) {
     const handleMount = useCallback((element: HTMLDivElement) => {
+        if (typeof window === "undefined") {
+            return;
+        }
+
         import("postscribe").then((postscribe) => {
             postscribe.default(element, html, {
                 afterAsync,
