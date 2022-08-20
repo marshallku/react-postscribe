@@ -42,7 +42,7 @@ export default function PostScribe({
     releaseAsync,
 }: PostScribeProps) {
     const handleMount = useCallback((element: HTMLDivElement) => {
-        if (typeof window === "undefined") {
+        if (typeof window === "undefined" || !element) {
             return;
         }
 

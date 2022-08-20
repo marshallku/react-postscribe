@@ -17,7 +17,6 @@ Inspired by [`react-postscribe`](https://github.com/angeloashmore/react-postscri
 -   Add TypeScript support (both postscribe and react-postscribe)
 -   Update version of React
 -   Refactor to function component
--   Remove legacy ref
 -   Remove lodash
 
 </details>
