@@ -6,7 +6,23 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/@marshallku/react-postscribe.svg)](https://www.npmjs.com/package/@marshallku/react-postscribe)
 
 React component to render HTML with [`postscribe`](https://github.com/krux/postscribe).\
-Inspired by [`react-postscribe`](https://github.com/angeloashmore/react-postscribe)
+
+---
+
+Inspired by [`react-postscribe`](https://github.com/angeloashmore/react-postscribe).
+
+<details>
+<summary>What's the difference?</summary>
+
+-   Add TypeScript support (both postscribe and react-postscribe)
+-   Update version of React
+-   Refactor to function component
+-   Remove legacy ref
+-   Remove lodash
+
+</details>
+
+---
 
 Made for better [albamon mobile](https://m.albamon.com/) MSA
 
