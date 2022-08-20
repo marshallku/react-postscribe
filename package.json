@@ -1,6 +1,6 @@
 {
     "name": "@marshallku/react-postscribe",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "React component to render HTML with postscribe",
     "main": "dist/index.esm.js",
     "module": "dist/index.esm.js",
@@ -8,7 +8,6 @@
     "type": "module",
     "scripts": {
         "build": "rollup --config",
-        "postbuild": "cp -r src/@types dist",
         "prepublish": "npm run build"
     },
     "keywords": [
