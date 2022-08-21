@@ -1,3 +1,4 @@
-import PostScribe from "./components/PostScribe";
+import PostScribe, { PostScribeProps } from "./components/PostScribe";
 
 export default PostScribe;
+export type { PostScribeProps };

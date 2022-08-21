@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 
-interface PostScribeProps {
+export interface PostScribeProps {
     /** An html string or a function that takes a DOM Document and writes to it. */
     html: string;
     /** A callback called when an async script has loaded */
