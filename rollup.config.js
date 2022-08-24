@@ -1,5 +1,6 @@
 import { babel } from "@rollup/plugin-babel";
 import typescript from "@rollup/plugin-typescript";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import dts from "rollup-plugin-dts";
 import pkg from "./package.json";
 
@@ -11,22 +12,21 @@ const makeExternalPredicate = (externalArr) => {
     return (id) => pattern.test(id);
 };
 
-const basePlugins = [
-    babel({
-        babelHelpers: "bundled",
-        plugins: ["transform-object-rest-spread"],
-    }),
-    typescript(),
-];
-
 export default [
     {
         input: "src/index.ts",
         output: [{ file: pkg.module, format: "es" }],
         external: makeExternalPredicate([
-            ...Object.keys(pkg.dependencies || {}),
+            ...Object.keys(pkg.dependencies),
+            ...Object.keys(pkg.peerDependencies),
         ]),
-        plugins: [...basePlugins],
+        plugins: [
+            babel({
+                babelHelpers: "bundled",
+            }),
+            peerDepsExternal(),
+            typescript(),
+        ],
     },
     {
         input: "src/index.ts",

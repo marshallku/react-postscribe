@@ -7,7 +7,7 @@
     "types": "dist/index.d.ts",
     "type": "module",
     "scripts": {
-        "build": "rollup --config",
+        "build": "NODE_ENV=production rollup --config",
         "prepublish": "npm run build"
     },
     "keywords": [
@@ -21,16 +21,18 @@
     },
     "license": "MIT",
     "dependencies": {
-        "postscribe": "^2.0.8",
-        "react": "^18.2.0"
+        "postscribe": "^2.0.8"
+    },
+    "peerDependencies": {
+        "react": "^17.0.2"
     },
     "devDependencies": {
         "@rollup/plugin-babel": "^5.3.1",
         "@rollup/plugin-typescript": "^8.3.4",
-        "@types/react": "^18.0.17",
-        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "@types/react": "^17.0.30",
         "rollup": "^2.78.1",
         "rollup-plugin-dts": "^4.2.2",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
         "tslib": "^2.4.0",
         "typescript": "^4.7.4"
     }
