@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { createElement, useCallback } from "react";
 import { PostScribeProps } from "./@types/PostScribe";
 
 export default function PostScribe({
@@ -37,5 +37,5 @@ export default function PostScribe({
         });
     }, []);
 
-    return <div ref={handleMount} />;
+    return createElement("div", { ref: handleMount });
 }
