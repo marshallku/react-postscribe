@@ -2,7 +2,7 @@ import { babel } from "@rollup/plugin-babel";
 import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import dts from "rollup-plugin-dts";
-import pkg from "./package.json";
+import pkg from "./package.json" assert { type: "json" };
 
 const makeExternalPredicate = (externalArr) => {
     if (externalArr.length === 0) {
