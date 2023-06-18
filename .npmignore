@@ -13,7 +13,7 @@ src
 *.local
 *.config.*
 tsconfig.json
-package-lock.json
+scripts
 
 # Editor directories and files
 .vscode/*
